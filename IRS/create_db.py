@@ -4,7 +4,7 @@ def create_db():
     cur=con.cursor()
     cur.execute("CREATE TABLE IF NOT EXISTS employee(eid INTEGER PRIMARY KEY AUTOINCREMENT,name text,email text, contact text, dob text)")
     con.commit()
-
+# lassan
     cur.execute("CREATE TABLE IF NOT EXISTS supplier(invoice INTEGER PRIMARY KEY AUTOINCREMENT,name text, contact text, desk text)")
     con.commit()
 
